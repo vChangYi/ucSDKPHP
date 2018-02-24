@@ -83,24 +83,6 @@ abstract class Base
             return false;
         }
 
-        $paths[] = 'pay';
-        // 获取企业账号
-        if (!$this->getEnumber($paths[])) {
-            throw new Exception(Error::ENUMBER_EMPTY);
-            return false;
-        }
-
-        // 获取应用标识
-        if (!$this->getPluginIdentifier($paths[])) {
-            throw new Exception(Error::PLUGIN_IDENTIFIER_EMPTY);
-            return false;
-        }
-
-        // 获取第三方标识
-        if (!$this->getThirdIdentifier($paths[])) {
-            throw new Exception(Error::THIRD_IDENTIFIER_EMPTY);
-            return false;
-        }
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
@@ -149,9 +131,7 @@ abstract class Base
             throw new Exception(Error::API_URL_EMPTY);
             return false;
         }
-/*
-        $paths[] = 's';
-*/
+
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
@@ -178,15 +158,7 @@ abstract class Base
             throw new Exception(Error::API_URL_EMPTY);
             return false;
         }
-/*
-        $paths[] = 's';
 
-        // 获取第三方标识
-        if (!$this->getThirdIdentifier($paths[])) {
-            throw new Exception(Error::THIRD_IDENTIFIER_EMPTY);
-            return false;
-        }
-*/
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
@@ -213,14 +185,7 @@ abstract class Base
             throw new Exception(Error::API_URL_EMPTY);
             return false;
         }
-/**
-        $paths[] = 'b';
-        // 获取企业账号
-        if (!$this->getEnumber($paths[])) {
-            throw new Exception(Error::ENUMBER_EMPTY);
-            return false;
-        }
-*/
+
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
@@ -248,18 +213,6 @@ abstract class Base
             return false;
         }
 
-        $paths[] = 'b';
-        // 获取企业账号
-        if (!$this->getEnumber($paths[])) {
-            throw new Exception(Error::ENUMBER_EMPTY);
-            return false;
-        }
-
-        // 获取第三方标识
-        if (!$this->getThirdIdentifier($paths[])) {
-            throw new Exception(Error::THIRD_IDENTIFIER_EMPTY);
-            return false;
-        }
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
@@ -286,26 +239,7 @@ abstract class Base
             throw new Exception(Error::API_URL_EMPTY);
             return false;
         }
-/**
-        $paths[] = 'a';
-        // 获取企业账号
-        if (!$this->getEnumber($paths[])) {
-            throw new Exception(Error::ENUMBER_EMPTY);
-            return false;
-        }
 
-        // 获取应用标识
-        if (!$this->getPluginIdentifier($paths[])) {
-            throw new Exception(Error::PLUGIN_IDENTIFIER_EMPTY);
-            return false;
-        }
-
-        // 获取第三方标识
-        if (!$this->getThirdIdentifier($paths[])) {
-            throw new Exception(Error::THIRD_IDENTIFIER_EMPTY);
-            return false;
-        }
-*/
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
@@ -332,14 +266,7 @@ abstract class Base
             throw new Exception(Error::API_URL_EMPTY);
             return false;
         }
-/**
-        $paths[] = 'b';
-        // 获取企业账号
-        if (!$this->getEnumber($paths[])) {
-            throw new Exception(Error::ENUMBER_EMPTY);
-            return false;
-        }
-*/
+
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
@@ -366,14 +293,7 @@ abstract class Base
             throw new Exception(Error::API_URL_EMPTY);
             return false;
         }
-/*
-        $paths[] = 'b';
-        // 获取企业账号
-        if (!$this->getEnumber($paths[])) {
-            throw new Exception(Error::ENUMBER_EMPTY);
-            return false;
-        }
-*/
+
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
@@ -401,18 +321,7 @@ abstract class Base
             throw new Exception(Error::API_URL_EMPTY);
             return false;
         }
-/*
-        $paths[] = 'red-packets-business';
-        $paths[] = 'v1';
 
-        $paths[] = 'api';
-        $paths[] = 'b';
-        // 获取企业账号
-        if (!$this->getEnumber($paths[])) {
-            throw new Exception(Error::ENUMBER_EMPTY);
-            return false;
-        }
-*/
         $params[] = implode('/', $paths);
 
         return $this->generateApiUrl($params);
